@@ -1,6 +1,6 @@
-import 'package:todo_app/data/models/task_model.dart';
 import '../../domain/entities/task_entity.dart';
 import '../../domain/repositories/task_repository.dart';
+import '../models/task_model.dart';
 
 class TaskRepositoryImpl implements TaskRepository {
   @override

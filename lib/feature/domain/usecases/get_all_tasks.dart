@@ -1,5 +1,5 @@
-import 'package:todo_app/domain/entities/task_entity.dart';
-import 'package:todo_app/domain/repositories/task_repository.dart';
+import '../entities/task_entity.dart';
+import '../repositories/task_repository.dart';
 
 class GetAllTasks {
   final TaskRepository taskRepository;

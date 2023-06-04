@@ -1,4 +1,4 @@
-import 'package:todo_app/domain/entities/task_entity.dart';
+import '../../domain/entities/task_entity.dart';
 
 class TaskModel extends TaskEntity {
   const TaskModel({
@@ -6,14 +6,12 @@ class TaskModel extends TaskEntity {
     required title,
     required description,
     required isCompleted,
-    required priority,
     required created,
   }) : super(
           id: id,
           title: title,
           description: description,
           isCompleted: isCompleted,
-          priority: priority,
           created: created,
         );
 
@@ -23,7 +21,6 @@ class TaskModel extends TaskEntity {
       title: ['title'] as String,
       description: ['description'] as String,
       isCompleted: ['isCompleted'] as bool,
-      priority: ['priority'] as Priority,
       created: DateTime.parse(['created'] as String),
     );
   }
@@ -34,7 +31,6 @@ class TaskModel extends TaskEntity {
       'title': title,
       'description': description,
       'isCompleted': isCompleted,
-      'priority': priority,
       'created': created.toIso8601String(),
     };
   }
